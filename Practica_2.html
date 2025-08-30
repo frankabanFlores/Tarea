@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function mostrarHora() {
+      const ahora = new Date();
+      const horaFormateada = ahora.toLocaleTimeString();
+      document.getElementById("output").textContent = horaFormateada;
+    }
+  </script>
+</head>
+<body>
+    <details>
+        <summary>Click</summary>
+        contenido oculto
+    </details>
+    
+     <h2>Hora Actual :</h2>
+    <output id="output">--:--:--</output>
+    <button onclick="mostrarHora()">Mostrar Hora Actual</button><br>
+
+    <link rel="stylesheet" href="estilo.css"><br>
+
+    <bdo dir="rtl">Texto en direccion de derecha a izquierda</bdo><br>
+
+    <nav>
+        <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <object data="animacion.swf" type="application/x-shockwave-flash" width="400" height="300">
+        <param name="autoplay" value="true">
+    </object><br>
+    
+    <font face="Comic Sans MS" size="5" color="purple">Texto con estilo retro</font><br>
+
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/Imeq3GeRttw" 
+        title="Video de YouTube" 
+        frameborder="0" 
+        allowfullscreen>
+    </iframe>
+    <div style="background-color: lightgray; padding: 10px;">
+        <h2>Sección agrupada</h2>
+        <p>Este contenido está dentro de un div.</p>
+    </div>
+    
+    <marquee behavior="scroll" direction="left">¡Este texto se mueve hacia la izquierda!</marquee>
+
+    <pre>
+    Línea 1
+        Línea 2
+            Línea 3
+    </pre>
+
+    <label for="nivel">Nivel de batería:</label>
+    <meter id="nivel" value="0.6" min="0" max="1">60%</meter>
+
+    <iframe src="https://github.com/" width="600" height="400" title="Ejemplo"></iframe>
+
+    <section>
+        <h2>Etiqueta <code>&lt;progress&gt;</code></h2>
+        <label for="descarga">Descargando archivo:</label>
+        <progress id="descarga" value="70" max="100">70%</progress>
+    </section>
+
+    <dialog id="info">
+        <p>Este es un mensaje emergente.</p>
+        <button onclick="document.getElementById('info').close()">Cerrar</button>
+    </dialog>
+    <button onclick="document.getElementById('info').showModal()">Mostrar diálogo</button>
+</body>
+</html>
